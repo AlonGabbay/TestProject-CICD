@@ -10,7 +10,7 @@ jobs:
     executor: python/default
     steps:
      - run:
-          command: curl -X POST "https://api.testproject.io/v2/projects/sxwpEetUFEKEazlUUdwcrw/jobs/gsxelYwdeE2HZ73Jo7ZdBg/run" -H "accept:application/json" -H "Authorization:xZJu2icTCObrQwBduNt47ybQcyDtR-bIn_NWHnRH3v01" -H "Content-Type:application/json" -d "{ \"agentId\":\"91z5XIeyTEaVu6FWb0L9rw\", \"browsers\":[ \"Chrome\" ], \"queue\":true, \"restartDriver\":false, \"projectParameters\":{ \"Username\":\"TP_user_1\", \"RoleNumber\":2 }, \"testParameters\":[ { \"testId\":\"i915ya9H6k62Bce-dozkXg\", } ]}"
+          command: curl -X POST "https://api.testproject.io/v2/projects/sxwpEetUFEKEazlUUdwcrw/jobs/gsxelYwdeE2HZ73Jo7ZdBg/run" -H "accept:application/json" -H "Authorization:xZJu2icTCObrQwBduNt47ybQcyDtR-bIn_NWHnRH3v01" -H "Content-Type:application/json" -d "{ \"agentId\":\"91z5XIeyTEaVu6FWb0L9rw\", \"browsers\":[ \"Chrome\" ], \"queue\":true, \"restartDriver\":false, \"projectParameters\":{ \"Username\":\"TP_user_1\", \"RoleNumber\":2 }, \"testParameters\":[ { \"testId\":\"i915ya9H6k62Bce-dozkXg\", \"dataSourceId\":\"Ir3CFoqv3kmx4IeRscFdSQ\" } ]}"
           name: Run Test On Build
 workflows:
   main:
