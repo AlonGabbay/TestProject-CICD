@@ -14,7 +14,6 @@ workflows:
     jobs:
       - build-and-test
 
-
 jobs:
   build-and-test:  # This is the name of the job, feel free to change it to better match what you're trying to do!
     # These next lines defines a docker executors: https://circleci.com/docs/2.0/executor-types/
@@ -38,5 +37,4 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: pytest
-
+          command: curl -X POST "https://api.testproject.io/v2/projects/sxwpEetUFEKEazlUUdwcrw/jobs/gsxelYwdeE2HZ73Jo7ZdBg/run" -H "accept: application/json" -H "Authorization: xZJu2icTCObrQwBduNt47ybQcyDtR-bIn_NWHnRH3v01" -H "Content-Type: application/json" -d "{ \"agentId\": \"91z5XIeyTEaVu6FWb0L9rw\", \"browsers\": [ \"Chrome\" ], \"queue\": true, \"restartDriver\": false, \"projectParameters\": { \"Username\": \"TP_user_1\", \"RoleNumber\": 2 }, \"testParameters\": [ { \"testId\": \"i915ya9H6k62Bce-dozkXg\", } ]}"
